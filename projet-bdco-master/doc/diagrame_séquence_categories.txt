@@ -1,0 +1,15 @@
+@startuml
+actor user
+boundary interface
+entity noyau
+database bdd
+
+user -> interface : clic sur catégories
+interface -> noyau : évenement sur callback
+noyau -> bdd : requête SQL avec API JDBC
+bdd -> noyau : retour table données pour traitant
+noyau -> interface : actualise l'affichage en fonction des données du traitant
+interface -> user : retour sur la requête
+
+
+@enduml

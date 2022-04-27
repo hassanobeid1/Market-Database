@@ -1,0 +1,20 @@
+@startuml
+actor user
+boundary interface
+entity noyau
+database bdd
+
+user -> interface : clic sur enchère
+interface -> noyau : évenement sur callback
+noyau -> bdd : requête  disponibilité
+bdd -> noyau : retour disponibilité
+== dispo ==
+noyau -> bdd : requête modif table
+noyau -> interface : actualise l'affichage en fonction des données du traitant
+interface -> user : retour sur la requête
+== pas dispo ==
+noyau -> interface : renvoie message d'erreur
+interface -> user : retour sur l'échec de la requete
+
+
+@enduml

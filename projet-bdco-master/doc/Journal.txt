@@ -1,0 +1,11 @@
+Séance 1/2 - Jour 1 : Tâche A : Détermination des DF/contraintes utilisées ensuite pour la justification
+du model entités (Réalisation du diagramme)
+
+Tâche B: Analyse fonctionnelle (diagrammes état-transitions pour cas d'exécutions.)
+Réalisation UML sur PlantUML
+
+Séance 3 : Jour 2 : Tâche A : Continuation pour amélioration de la tâche (oublis/ ajouts, voir gitlab)
+Tâche C : Réalisation des relations + Tables / Début de la réflexion pour détermination des FN
+
+Tâche B : Architecture de l'application : Représentation des packages / architecture en couche
+Réalisation de l'architecture sur draw.io
